@@ -22,7 +22,11 @@ function SacarResto()
 	numero2= parseInt(numero2);
 
 	resultado = numero1 / numero2;
+	console.log(resultado)
 
+	//resto=numero1%numero2  
+
+	
 
 	alert("El resto es " + resultado);
 }
