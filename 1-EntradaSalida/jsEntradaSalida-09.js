@@ -8,11 +8,15 @@ function mostrarAumento()
 	let sueldo;
 	let nuevosueldo;
 	let aumento;
-	
+	let porcentaje
 
 	sueldo = parseFloat(document.getElementById("txtIdSueldo").value);
+ 
+	porcentaje = prompt("Ingrese porcentaje a calcular" );
 
-	aumento = sueldo * 10 / 100; 
+	percentaje = parseInt (porcentaje);
+
+	aumento = sueldo * porcentaje / 100; 
 
 	nuevosueldo = sueldo + aumento;
 
@@ -20,3 +24,6 @@ function mostrarAumento()
 
 
 }
+
+
+//Las consignas del 9 y 10 bis es agregarle que el % lo indica el ususario, hay que pedirselo

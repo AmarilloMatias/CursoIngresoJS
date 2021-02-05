@@ -1,4 +1,4 @@
-/*
+/* Amarillo Matias
 Debemos lograr tomar el importe por ID.
 Transformarlo a entero (parseInt), luego
 mostrar el importe con un Descuento del 25 %
@@ -9,13 +9,20 @@ function mostrarAumento()
 	let importe;
 	let nuevoimporte;
 	let descuento;
-	
+	let porcentaje
 
 	importe = parseFloat(document.getElementById("txtIdImporte").value);
 
-	descuento = importe * 25 / 100; 
+	porcentaje = prompt ("Ingrese el porcentaje a calcular")
+
+	porcentaje = parseInt (porcentaje)
+
+	descuento = importe * porcentaje / 100; 
 
 	nuevoimporte = importe - descuento;
 
 	document.getElementById("txtIdResultado").value = nuevoimporte;
 }
+
+
+//Las consignas del 9 y 10 bis es agregarle que el % lo indica el ususario, hay que pedirselo
