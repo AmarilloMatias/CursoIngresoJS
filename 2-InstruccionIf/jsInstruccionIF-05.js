@@ -9,12 +9,12 @@ function mostrar()
 
 	 if(edad>17)
 	 {
-		 alert("no es adolescente");
+		 alert("NO es adolescente");
 	 }
 
 	 if(edad<13)
 	 {
-		 alert("no es adolescente");
+		 alert("NO es adolescente");
 	 }
 
 	 /* if(edad>17||edad<13)

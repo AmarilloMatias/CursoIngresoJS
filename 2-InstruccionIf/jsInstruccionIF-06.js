@@ -9,13 +9,13 @@ function mostrar()
 	 edad = document.getElementById("txtIdEdad").value;
 	 edad = parseInt (edad);	
 
-	 if(edad < 13)
+	 if(edad<13)
 	 {
 		 alert("Eres un niño");
 	 }
 	 else
 	 {
-		if(edad >18)
+		if(edad>18)
 		{
 			alert("Eres un adulto");
 		}
@@ -25,7 +25,7 @@ function mostrar()
 		}
 	 }
 
-	 /*
+	 
 	 
 
 
