@@ -2,19 +2,24 @@ function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
 	let numero;
-
+	let mensaje;
 	numero = Math.floor(Math.random() * 10) + 1;
 
 	if(numero>8)
 	{
-		alert("EXELENTE = "+ numero)
+		mensaje=("EXELENTE = "+ numero)
 	}
 	else if(numero>3)
 	{
-		alert("APROBÓ = "+numero)
+		mensaje=("APROBÓ = "+numero)
 	}
 	else
 	{
-		alert("Vamos, la proxima se puede = "+numero)
+		mensaje=("Vamos, la proxima se puede = "+numero)
 	}
+
+	alert (mensaje);
+
 }//FIN DE LA FUNCIÓN
+
+/*resuelto con un solo alert*/

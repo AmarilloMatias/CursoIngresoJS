@@ -7,8 +7,75 @@ D.	Si compra 3  lamparitas bajo consumo marca "ArgentinaLuz"  el descuento es de
 E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de ingresos brutos en informar del impuesto con el siguiente mensaje:
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
+Amarillo Matias
+
  */
 function CalcularPrecio () 
 {
- 	
+    let cantidadLamparitas;
+    let marca;
+    let descuento;
+    let precioFinal;
+    let ingresosBrutos;
+
+    cantidadLamparitas = document.getElementById("txtIdCantidad").value;
+    cantidadLamparitas = parseInt(cantidadLamparitas);
+    marca = document.getElementById("Marca").value;
+    precioFinal= cantidadLamparitas*35;
+    descuento = 0;
+
+    if(cantidadLamparitas>5)
+    {
+        descuento=50;
+    }
+    else
+    {
+        if(cantidadLamparitas ==5)
+        {
+            if(marca=="ArgentinaLuz")
+            {
+                descuento=40;
+            }
+            else
+            {
+                descuento=30;
+            }
+            if(cantidadLamparitas==4)
+            {
+                if(marca=="ArgentinaLuz" || "FelipeLamparas")
+                {
+                    descuento=25;
+                }
+                else
+                {
+                    descuento=20;
+                }
+                if(cantidadLamparitas==3)
+                {
+                    if(marca=="ArgentinaLuz")
+                    {
+                        descuento=15;
+                    }
+                    else
+                    {
+                        if(marca=="FelipeLamparas")
+                        {
+                            descuento = 10;
+                        }
+                        else
+                        {
+                            descuento= 5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    precioFinal=precioFinal-(precioFinal*descuento/100);
+
+alert(precioFinal)
 }
+
+
+
