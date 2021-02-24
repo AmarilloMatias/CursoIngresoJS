@@ -9,13 +9,39 @@ function mostrar()
 	var numeroMinimo;
 	var respuesta;
 	//iniciar variables
-	banderaDelPrimero="es el primero";
+	banderaDelPrimero=0;
 	respuesta='si';
+
 	while(respuesta=="si")
 	{
+		numeroIngresado=prompt("ingrese un numero: ");
+		numeroIngresado=parseInt(numeroIngresado);
 		
-		respuesta=prompt("desea continuar?");
+		
+		if(banderaDelPrimero==0)
+		{
+			numeroMinimo=numeroIngresado;
+			numeroMaximo=numeroIngresado;
+			banderaDelPrimero=1
+		}
+		else
+		{
+			if(numeroIngresado<numeroMinimo)
+			{
+				numeroMinimo=numeroIngresado;
+			}
+			if(numeroIngresado>numeroMaximo)
+			{
+				numeroMaximo=numeroIngresado;
+			}
+		}
+
+		respuesta=prompt("Desea continuar? si o no");
+
 	}
+	
 	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimmo.value=numeroMinimo;
+	txtIdMinimo.value=numeroMinimo;
 }//FIN DE LA FUNCIÓN
+
+//Amarillo Matias

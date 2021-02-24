@@ -8,10 +8,10 @@ function mostrar()
 
 	while (claveIngresada !="utn750")
 	{
-		claveIngresada = prompt("ingrese el número clave.");
+		claveIngresada = prompt("Error Reingrese el número clave.");
 	}
-	
+	alert("clave correcta");
 }//FIN DE LA FUNCIÓN
 
-
+//Amarillo Matias
 
