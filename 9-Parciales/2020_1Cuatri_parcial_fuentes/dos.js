@@ -21,9 +21,9 @@ function mostrar()
   let acumuladorPrecioBruto;
   let descuento;
   let precioConDescuento;
-  let acumuladorCantidadArena;
-  let acumuladorCantidadCal;
-  let acumuladorCantidadCemento;
+  let acumuladorCantidadArena=0;
+  let acumuladorCantidadCal=0;
+  let acumuladorCantidadCemento=0;
   let productoMasBolsas;
   let acumuladorCantidadTotales;
 
@@ -118,13 +118,13 @@ function mostrar()
       descuento=25;
     }
     precioConDescuento=acumuladorPrecioBruto- ((acumuladorPrecioBruto*descuento)/100);
-    console.log("El importe total a pagar es: "+precioConDescuento+ "y su descuento es: " + descuento);
+   
     //b) el importe total a pagar con descuento(solo si corresponde)
   }
   
-  console.log("El precio total a pagar es:" + acumuladorPrecioBruto);
+  
   //a) El importe total a pagar , bruto sin descuento y...  
-  console.log("El producto con mas cantidad de bolsas es: "+productoMasBolsas);
+ 
   
 
   if(acumuladorCantidadArena>acumuladorCantidadCal && acumuladorCantidadArena>acumuladorCemento)
@@ -139,6 +139,10 @@ function mostrar()
   {
     productoMasBolsas="Cemento";
   }
+
+  console.log("El importe total a pagar es: "+precioConDescuento+ "y su descuento es: " + descuento);
+  console.log("El precio total a pagar es:" + acumuladorPrecioBruto);
+  console.log("El producto con mas cantidad de bolsas es: "+productoMasBolsas);
 
 
 }

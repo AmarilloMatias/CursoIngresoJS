@@ -25,12 +25,12 @@ function mostrar()
 	let fabricanteMasBarato;
 	let cantidadMasBarato;
 
-	let acumuladorCantidadJabon;
-	let contadorJabon;
-	let acumuladorCantidadBarbijo;
-	let contadorBarbijo;
-	let acumuladorCantidadAlcohol;
-	let contantadorAlcohol;
+	let acumuladorCantidadJabon =0;
+	let contadorJabon=0;
+	let acumuladorCantidadBarbijo=0;
+	let contadorBarbijo=0;
+	let acumuladorCantidadAlcohol=0;
+	let contantadorAlcohol=0;
 	let productoMasUnidades;
 
 	let promedio;
@@ -132,13 +132,17 @@ function mostrar()
 				if(acumuladorCantidadBarbijo>acumuladorCantidadAlcohol)
 				{
 					productoMasUnidades="Barbijo";
+					promedio=acumuladorCantidadBarbijo/contadorBarbijo;
 				}
 				else
 				{ //alcohol
 					productoMasUnidades="Alcohol";
+					promedio=acumuladorCantidadAlcohol/contantadorAlcohol;
+			
 				}
 			}
-			console.log("El promedio de " + productoMasUnidades + "es " + promedio);
-			console.log("Hay " + acumuladorCantidadJabon + "Jabones");
+			alert("El promedio de " + productoMasUnidades + "es " + promedio);
+			alert("Hay " + acumuladorCantidadJabon + " Jabones");
+			alert("El alcohol mas barato es: " + alcoholMasBarato + "del fabricante: "+ fabricanteMasBarato);
 }
 

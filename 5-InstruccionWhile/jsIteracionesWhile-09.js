@@ -40,8 +40,8 @@ function mostrar()
 
 	}
 	
-	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimo.value=numeroMinimo;
+	txtIdMaximo.value="maximo: " + numeroMaximo;
+	txtIdMinimo.value="minimo: " + numeroMinimo;
 }//FIN DE LA FUNCIÓN
 
 //Amarillo Matias
