@@ -1,7 +1,7 @@
 // Amarillo Matias
+
 function mostrar()
 {
-	//tomo la edad  
 	let edad
 	let edadMayor
 	let edadMenor
@@ -23,15 +23,9 @@ function mostrar()
 		alert (" Eres menor de edad");
 	 }
 
-	 /* if(edad>17)
-	 {
-		 alert ("Eres mayor de edad");
-		
-	 }
-		else 
-	 {
-			alert ("eres menor de edad");
-	 }
-	 */
-
 }//FIN DE LA FUNCIÓN
+
+
+
+//tomo la edad  
+	
